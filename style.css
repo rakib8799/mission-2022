@@ -1,0 +1,165 @@
+/* Set default values */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+/* Declare variables */
+:root {
+        --smallerSize: 1rem;
+        --mediumSize: 1.2rem;
+        --largeSize: 2rem;
+        --extraLargeSize: 3rem;
+        --primaryColor: rgb(107, 107, 253);
+        --secondaryColor: rgb(25, 32, 88);
+        --shadowColor: rgba(11, 1, 14, 0.144);
+        --whiteColor: white;
+        --stylishFont: "Yeseva One";
+}
+/* Initialize whole page values */
+body {
+        font-size: var(--smallerSize);
+        line-height: 1.2;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* For only image elements */
+img {
+        display: inline-block;
+        width: 100%;
+}
+/* All the sections without footer */
+#section1,
+#section2,
+#section3,
+#section4,
+#section5 {
+        height: 100vh;
+}
+/* One dimensional alignment */
+#section1,
+#sectionMission,
+#section3,
+#section4,
+#contactSection {
+        display: flex;
+        align-items: center;
+        margin: 0 var(--extraLargeSize) 0 var(--extraLargeSize);
+}
+
+/* For Section-1 */
+#bannerTitle {
+        border: 10px solid var(--secondaryColor);
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        padding-left: var(--smallerSize);
+}
+.mainText,
+.extraLargeFont {
+        font-size: var(--extraLargeSize);
+}
+.mainText,
+.primaryText {
+        font-family: var(--stylishFont);
+        text-shadow: 0px 5px var(--shadowColor);
+}
+.primaryText {
+        color: var(--primaryColor);
+}
+.text-lead {
+        font-size: var(--mediumSize);
+        width: 85%;
+}
+/* Style a button */
+.btn-main {
+        background-image: linear-gradient(
+                to left,
+                var(--primaryColor),
+                var(--secondaryColor)
+        );
+        color: var(--whiteColor);
+        border-radius: var(--smallerSize);
+        padding: var(--smallerSize) var(--mediumSize);
+        cursor: pointer;
+        border: none;
+}
+.img-fluid {
+        width: 35vw;
+}
+
+/* Section-2 */
+.text-center {
+        text-align: center;
+}
+.largeFont {
+        font-size: var(--largeSize);
+}
+#mission,
+#vision,
+#goal {
+        height: 75vh;
+        border-radius: var(--mediumSize);
+        margin-top: var(--smallerSize);
+        margin-right: var(--smallerSize);
+        padding: var(--largeSize);
+}
+#mission {
+        background: #4f9da61a;
+}
+#vision {
+        background: #ff59591a;
+}
+#goal {
+        background: #fff4d6;
+        margin-right: 0px;
+}
+.smallImg {
+        width: 15vw;
+}
+
+/* Section-3 */
+.develop {
+        margin-left: var(--extraLargeSize);
+}
+
+/* Section-5 */
+#allAddresses,
+#formInput {
+        height: 85vh;
+        padding: 50px 30px;
+        box-shadow: 5px 5px 10px #444444;
+        margin: auto;
+}
+#allAddresses {
+        width: 25vw;
+}
+#formInput {
+        width: 70vw;
+        color: var(--whiteColor);
+}
+#formInput input,
+textarea {
+        display: inline-block;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 62vw;
+        background: none;
+        border-bottom: 3px solid var(--primaryColor);
+}
+#formInput input:focus,
+textarea:focus {
+        outline: none;
+}
+.sendBtn {
+        display: block;
+        margin: auto;
+}
+
+/* Footer Section */
+#footer {
+        height: 20vh;
+        padding-top: 35px;
+        background: #333333;
+        color: var(--whiteColor);
+}
